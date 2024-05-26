@@ -1,8 +1,8 @@
-DROP TABLE sprzedaż;
-DROP TABLE produkt;
-DROP TABLE typ_produktu;
-DROP TABLE producent;
-DROP TABLE klient;
-DROP TABLE sprzedawca;
-DROP TABLE kraj;
-DROP TABLE obszar_sprzedaży;
+DROP TABLE IF EXISTS sprzedaż;
+DROP TABLE IF EXISTS produkt;
+DROP TABLE IF EXISTS typ_produktu;
+DROP TABLE IF EXISTS producent;
+DROP TABLE IF EXISTS klient;
+DROP TABLE IF EXISTS sprzedawca;
+DROP TABLE IF EXISTS kraj;
+DROP TABLE IF EXISTS obszar_sprzedaży;
