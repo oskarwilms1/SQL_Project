@@ -21,5 +21,5 @@ CREATE TABLE Produkt(ID_Produktu int, Nazwa_Produktu varchar(255),ID_Typu_prod i
 
 CREATE TABLE Sprzedaż(ID_sprzed SERIAL PRIMARY KEY,ID_Produktu int,ID_Klienta int,ilość int,cena_za_sztuke decimal(8,2),waluta varchar(3),Data_sprzedaży timestamp,
         CONSTRAINT fk_Produkt FOREIGN KEY(ID_Produktu) REFERENCES Produkt(ID_Produktu),
-        CONSTRAINT fk_Klient FOREIGN KEY(ID_Klienta) REFERENCES Klient(ID_Klienta);
+        CONSTRAINT fk_Klient FOREIGN KEY(ID_Klienta) REFERENCES Klient(ID_Klienta));
        
