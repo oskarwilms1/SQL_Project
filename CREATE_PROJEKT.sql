@@ -19,7 +19,7 @@ CREATE TABLE Produkt(ID_Produktu int, Nazwa_Produktu varchar(255),ID_Typu_prod i
         CONSTRAINT fk_Producent FOREIGN KEY(ID_Producenta) REFERENCES Producent(ID_Producenta),
         CONSTRAINT fk_Typ FOREIGN KEY(ID_Typu_prod) REFERENCES Typ_Produktu(ID_Typu_prod));
 
-CREATE TABLE Sprzedaż(ID_sprzed PRIMARY KEY,ID_Produktu int,ID_Klienta int,ilość int,cena_za_sztuke decimal(8,2),waluta varchar(3),Data_sprzedaży timestamp,
+CREATE TABLE Sprzedaż(ID_sprzed SERIAL PRIMARY KEY,ID_Produktu int,ID_Klienta int,ilość int,cena_za_sztuke decimal(8,2),waluta varchar(3),Data_sprzedaży timestamp,
         CONSTRAINT fk_Produkt FOREIGN KEY(ID_Produktu) REFERENCES Produkt(ID_Produktu),
         CONSTRAINT fk_Klient FOREIGN KEY(ID_Klienta) REFERENCES Klient(ID_Klienta);
        
