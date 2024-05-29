@@ -5,4 +5,10 @@ SELECT Nazwa_Klienta FROM klient WHERE ID_sprzedawcy = 121;
 /*Wyświetl wszystkich klientów, i sprzedawców im przypisanych*/
 SELECT Nazwa_Klienta,Imię || ' ' || Nazwisko AS Sprzedawca FROM klient INNER JOIN sprzedawca ON klient.ID_sprzedawcy = sprzedawca.ID_sprzedawcy;
 /*Wyświetl wszystkich klientów, i sprzedawców im przypisanych, nie używając INNER JOIN*/
-SELECT Nazwa_Klienta,sprzedawca.Nazwisko as nazwisko_sprzedawcy FROM klient, sprzedawca WHERE klient.ID_sprzedawcy = sprzedawca.ID_sprzedawcy;
+SELECT Nazwa_Klienta,sprzedawca.imię || ' ' || sprzedawca.Nazwisko as Sprzedawca FROM klient, sprzedawca WHERE klient.ID_sprzedawcy = sprzedawca.ID_sprzedawcy;
+/*Wyświetl ilość wszystkich dokonanych transakcji*/
+SELECT COUNT(*) FROM sprzedaż;
+
+
+
+
