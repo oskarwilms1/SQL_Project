@@ -33,7 +33,7 @@ select waluta from dochód where waluta = 'PLN' or waluta = 'USD';
 /*Usuń klientów, którzy nie dokonali żadnej transakcji*/
 DELETE FROM klient WHERE NOT EXISTS (SELECT 1 from sprzedaż WHERE klient.id_klienta = sprzedaż.id_klienta);
 /*Usuń klientów, którzy nie mają numeru VAT*/
-DELETE FROM klient WHERE VAT = NULL;
+DELETE FROM klient WHERE VAT IS NULL;
 /*Zmień nazwę klienta*/
 UPDATE klient set Nazwa_Klienta = 'Dobra Karczma' WHERE Nazwa_Klienta = 'Gospodarstwo Rolne Buda';
 
