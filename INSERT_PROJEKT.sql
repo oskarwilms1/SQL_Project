@@ -21,7 +21,7 @@ INSERT INTO klient(ID_Klienta,Nazwa_Klienta,ID_sprzedawcy,VAT,ID_Kraju) VALUES (
 INSERT INTO klient(ID_Klienta,Nazwa_Klienta,ID_sprzedawcy,VAT,ID_Kraju) VALUES (1004,'Ching Cheng FamilyCompany',122,1234567893,'CN');
 INSERT INTO klient(ID_Klienta,Nazwa_Klienta,ID_sprzedawcy,VAT,ID_Kraju) VALUES (1005,'BIG Whiskey Company',123,1234567894,'US');
 INSERT INTO klient(ID_Klienta,Nazwa_Klienta,ID_sprzedawcy,VAT,ID_Kraju) VALUES (1006,'Frozen Vodka Industries',123,1234567895,'CA');
-INSERT INTO klient(ID_Klienta,Nazwa_Klienta) VALUES (1008,'RWEODNSOJAOJDFE');
+INSERT INTO klient(ID_Klienta,Nazwa_Klienta,ID_sprzedawcy,VAT,ID_Kraju) VALUES (1008,'RWEODNSOJAOJDFE',121,NULL,'CA');
 
 INSERT INTO producent(ID_Producenta,Nazwa_Firmy,ID_Kraju,VAT) VALUES (22220,'Destilation Station','US',1234567896);
 INSERT INTO producent(ID_Producenta,Nazwa_Firmy,ID_Kraju,VAT) VALUES (22223,'Destilation Base','US',1234567888);
