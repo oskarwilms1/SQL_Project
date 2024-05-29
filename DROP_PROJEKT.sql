@@ -1,3 +1,4 @@
+DROP VIEW IF EXISTS Dochód;
 DROP TABLE IF EXISTS sprzedaż;
 DROP TABLE IF EXISTS produkt;
 DROP TABLE IF EXISTS typ_produktu;
