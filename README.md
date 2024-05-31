@@ -8,4 +8,5 @@ TASKS:
 3. Create an SQL script for deleting tables.
 4. Create an SQL script for inserting example data.
 5. Create an SQL script for queries.
-
+6. Create an SQL script for triggers.
+7. Create an SQL script for testing set triggers
