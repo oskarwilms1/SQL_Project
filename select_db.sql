@@ -29,7 +29,7 @@ select ID_Kraju from klient where klient.ID_Kraju not in (select ID_Kraju from p
 /*Stwórz widok Dochód*/
 CREATE VIEW Dochód as select waluta, SUM(ilość*cena_za_sztuke) as przychód from sprzedaż group by waluta;
 /*Operacja na widoku*/
-select waluta from dochód where waluta = 'PLN' or waluta = 'USD';
+select waluta,przychód from dochód where waluta = 'PLN' or waluta = 'USD';
 /*Usuń klientów, którzy nie dokonali żadnej transakcji*/
 DELETE FROM klient WHERE NOT EXISTS (SELECT 1 from sprzedaż WHERE klient.id_klienta = sprzedaż.id_klienta);
 /*Usuń klientów, którzy nie mają numeru VAT*/
