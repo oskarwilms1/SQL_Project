@@ -8,3 +8,15 @@ BEGIN
   END IF;
 END;
 $$ LANGUAGE plpgsql;
+
+
+CREATE OR REPLACE FUNCTION check_if_correct_date()
+RETURNS TRIGGER AS $$
+BEGIN
+    IF (NEW.data_sprzedaży > CURRENT_DATE) THEN
+        RETURN NULL;
+    ELSE 
+        RETURN NEW;
+  END IF;
+END;
+$$ LANGUAGE plpgsql;
