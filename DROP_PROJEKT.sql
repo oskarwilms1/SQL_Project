@@ -1,3 +1,7 @@
+DROP TRIGGER IF EXISTS on_insert_sprzedaż ON sprzedaż;
+DROP TRIGGER IF EXISTS on_insert_update_sprzedaż ON sprzedaż;
+DROP FUNCTION IF EXISTS check_if_negative;
+DROP FUNCTION IF EXISTS check_if_correct_date;
 DROP VIEW IF EXISTS Dochód;
 DROP TABLE IF EXISTS sprzedaż;
 DROP TABLE IF EXISTS produkt;
